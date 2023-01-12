@@ -8,23 +8,30 @@ body {
 
 }
 
-hr{
+hr {
     border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+
 .container {
-    background: #FFFFFF;
+    /* background: #FFFFFF;       it's main color */
     width: 870px;
     padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 21px;
     /* height: 679px; */
     /* left: 285px; */
     /* top: 130px; */
-    /* border-radius: 5px; */
+    background-color: lightcoral;
+    /*testing color*/
+
 
 }
 
@@ -32,7 +39,7 @@ main {
 
 /* Top players style */
 
-.top-players{
+.top-players {
     margin-bottom: 30px;
 }
 
@@ -46,7 +53,7 @@ main {
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap:30px;
+    grid-row-gap: 30px;
 }
 
 
@@ -56,12 +63,84 @@ main {
     /* align-items: center; */
 }
 
-.player-name{
+.player-name {
     margin-left: 16px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .player img {
     width: 56px;
     height: 56px;
 }
+
+/* top-blogs style*/
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 224px;
+    height: 127px;
+
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.blog-author {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* Latest courses style */
+.courses{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:30px;
+}
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+
+  
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled {
+    background: #FFC014;
+}
+
+.fa-star.empty {
+    background: #AEAEAE;
+    opacity: 0.25;
+}
+
