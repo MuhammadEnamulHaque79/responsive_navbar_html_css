@@ -8,6 +8,10 @@ body {
 
 }
 
+hr{
+    border: 1px solid #D1D1D1;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -28,15 +32,21 @@ main {
 
 /* Top players style */
 
+.top-players{
+    margin-bottom: 30px;
+}
+
 .section-title {
     font-weight: 500;
     font-size: 24px;
     color: #562EFF;
+    margin-top: 3px;
 }
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
 }
 
 
@@ -47,7 +57,8 @@ main {
 }
 
 .player-name{
-    margin-left: 16px; 
+    margin-left: 16px;
+    font-size: 18px; 
 }
 
 .player img {
