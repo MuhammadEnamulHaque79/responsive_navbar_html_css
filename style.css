@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common styles or utilities */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
+
 
 }
 
@@ -162,6 +167,18 @@ Media Queries
         flex-direction: column;
     }
 
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
 }
 
 /*
