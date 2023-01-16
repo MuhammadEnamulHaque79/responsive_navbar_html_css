@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_img_container_responsive</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+
+        }
+
+        .menu {
+            display: flex;
+            background-color: cadetblue;
+            padding: 15px;
+            justify-content: space-between;
+
+        }
+
+        .menu a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        @media only screen and (max-width:576px) {
+
+            .menu {
+                /* grid-template-columns: repeat(1, 1fr);
+                flex-direction: column; */
+                display: flex;
+            }
+
+            .menu a {
+                /* text-align: center; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <div><a href="">Next World</a> </div>
+
+
+        <!-- above span creates problem,plz bro kindly explain -->
+
+        <div>
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Login</a>
+            <a href="">Signup</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

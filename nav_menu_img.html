@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_menu_img_responsive</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: cadetblue;
+        }
+
+        .menu h2 {
+            color: white;
+        }
+
+        .menu-items {
+            
+            display: flex;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            margin-left: 15px;
+            color: white;
+        }
+
+        .img-container {
+            display: flex;
+            
+            border: 1px solid peru;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            gap: 15px;
+        }
+
+        .img-container img {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width:576px) {
+            .img-container {
+                 width: 100%;
+                 align-items: center;
+             }
+            .menu,
+            .img-container {
+                grid-template-columns: repeat(1, 1fr);
+                flex-direction: column;
+            }
+
+            .menu-items {
+                flex-direction: column;
+            }
+
+            .img-container img {
+                width: 100px;
+                height: 100px;
+                border: 1px solid lightcoral;
+                margin-top: 15px;
+                padding: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div>
+            <h2>Next World</h2>
+        </div>
+
+        <div class="menu-items">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Login</a>
+            <a href="">Registration</a>
+        </div>
+
+        
+
+    </div>
+    <div class="img-container">
+        <img src="images/players/player-1.png" alt="">
+        <img src="images/players/player-2.png" alt="">
+        <img src="images/players/player-3.png" alt="">
+        <img src="images/players/player-4.png" alt="">
+        <img src="images/players/player-5.png" alt="">
+        <img src="images/players/player-6.png" alt="">
+    </div>
+
+</body>
+
+</html>

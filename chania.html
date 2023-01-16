@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu</title>
+    <style>
+        .menu-container {
+            background-color: lightgrey;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: cadetblue;
+            padding: 15px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            
+
+        }
+
+        .img-container {
+            display: flex;
+            border: 1px solid purple;
+            border-radius: 5px;
+            
+        }
+
+        .img-container img {
+            width: 140px;
+            height:140px;
+            margin-left: 6px;
+            
+
+        }
+
+        /* Responsive for small devices */
+        @media only screen and (max-width:576px) {
+            .img-container {
+                 width: 100%;
+                 align-items: center;
+             }
+
+            .menu-container,
+            .menu,
+            .img-container {
+                grid-template-columns: repeat(1, 1fr);
+                background-color: rgb(128, 13, 221);
+                flex-direction: column;
+            }
+
+            .menu a {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            .img-container img {
+                width: 100px;
+                height: 100px;
+                margin-top: 15px;
+              
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <h1>You must be able to do the job</h1>
+        <p>You must be able to the job.You must be able to the job.You must be able to the job.You must be able to the
+            job.You must be able to the job.You must be able to the job.</p>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Login</a>
+            <a href="">Registration</a>
+        </div>
+        <div class="img-container">
+            <img src="images/players/player-1.png" alt="">
+            <img src="images/players/player-2.png" alt="">
+            <img src="images/players/player-3.png" alt="">
+            <img src="images/players/player-4.png" alt="">
+            <img src="images/players/player-5.png" alt="">
+            <img src="images/players/player-6.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

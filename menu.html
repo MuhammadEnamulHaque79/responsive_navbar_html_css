@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Responsive</title>
+<style>
+.nav-container{
+    display: flex;
+    /* justify-content: center; */
+    background-color: cadetblue;
+    
+}
+
+.nav-name{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+    
+}
+
+.nav-name a{
+    text-decoration: none;
+    color:white;
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width:576px) {
+    .nav-name, .img-container{
+    
+    background-color:rgb(3, 66, 68);
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    
+}
+.nav-name a{
+    text-align: center;
+    color:yellow;
+}
+    
+    
+
+.img-container img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid seashell;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+}
+
+
+</style>
+</head>
+<body>
+    
+        <header class="nav-container">
+            <nav class="nav-name">
+               <a href="">Nav-1</a>
+               <a href="">Nav-2</a>
+               <a href="">Nav-3</a>
+               <a href="">Nav-4</a>
+               <a href="">Nav-5</a>
+            </nav>
+        </header>
+        <div class="img-container hide">
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-1.png" alt="">
+            </div>
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-2.png" alt="">
+            </div>
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-3.png" alt="">
+            </div>
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-4.png" alt="">
+            </div>
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-5.png" alt="">
+            </div>
+            <div>
+                <h3>Name :</h3>
+                <img src="images/players/player-6.png" alt="">
+            </div>
+        </div>
+    
+</body>
+</html>
